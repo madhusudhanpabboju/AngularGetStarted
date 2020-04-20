@@ -1,0 +1,10 @@
+<h2>{{title}}</h2>
+
+<button (click)="onClick();">Greeting</button>
+<span>{{greeting}}</span>
+<br><br>
+<button (click)="onClickPassEvent($event);">Event Pass</button> <!-- usig $event you can access all the properties of the dom event-->
+<br><br>
+<!-- Template Statement -->
+<button (click)="templateGreeting='Welcome Madhu'">Template Statement</button>
+{{templateGreeting}}

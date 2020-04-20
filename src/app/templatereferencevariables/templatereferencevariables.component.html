@@ -1,0 +1,5 @@
+<h2>{{title}}</h2>
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log</button> {{logValue}}
+<input #referHtmlEle type="text">
+<button (click)="completeReferHtmlElement(referHtmlEle)">Log</button> {{referHtmlEleValue}}

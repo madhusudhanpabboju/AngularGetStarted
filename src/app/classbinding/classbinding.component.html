@@ -1,0 +1,18 @@
+<h2 class="text-success">{{title}}</h2>
+<p [class]="successClass">Class: {{successClass}}</p>
+<p class="text-special" [class]="successClass">Class: {{successClass}}</p>
+<p class="text-special" [class]="successClass">Class: text-special + {{successClass}}</p>
+<p [class.text-danger]='hasError'>Class: text-error if it has an error</p>
+<p [ngClass]="messageClass">ngClass Conditional Class</p>
+
+<h2>Style Binding</h2>
+<p [style.color]="'orange'">Style Binding</p>
+<p [style.color]="highlightColor">Style Binding through Property</p>
+
+<p [style.color]="hasError ? 'red' : 'green'">Style Binding Conditional</p>
+<p [style.color]="!hasError ? 'red' : 'green'">Style Binding Conditional</p>
+<p [ngStyle]="titleStyle">Style Binding</p>
+
+
+
+

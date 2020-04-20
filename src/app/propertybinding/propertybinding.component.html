@@ -1,0 +1,25 @@
+<h2>{{title}}</h2>
+<input [id]="myId" type="text" value ="Angadh" />
+<input id="{{myId}}" type="text" value ="Angadh" />
+<input id="{{myId}}" disabled="false" type="text" value ="Angadh" /> <!-- This still disabled-->
+
+<!-- Here the property binding works  -->
+<input id="{{myId}}" [disabled]="false" type="text" value ="Disabled False" />
+<input id="{{myId}}" [disabled]="true" type="text" value ="Disabled True" />
+<input id="{{myId}}" [disabled]="isDisabled" type="text" value ="isDisabled {{isDisabled}}" />
+
+<!-- <h2>Alternative property binding</h2> -->
+<input id="{{myId}}" bind-disabled="isDisabled" type="text" value ="Disabled {{isDisabled}}" />
+
+<!--
+    Why do we need Property binding?
+    A. There is a limitation to interpulation it can only work with String values.
+-->
+<!-- 
+    Attribute and Properties are not the same
+    Attributes - HTML
+    Properties - DOM(document object model) 
+    Attributes initialize DOM properties and then they are done. Attribute values cannot change once they are initilized.
+    Property values can change.
+
+ -->

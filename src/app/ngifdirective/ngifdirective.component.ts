@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgifdirectiveComponent implements OnInit {
   public title:string = "ngIf Directive";
+  public isTrueOrFalse:boolean = true;
+  public displayName:boolean = true;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,40 @@
+<h2>{{title}}</h2>
+
+<ul *ngFor="let col of colors">
+    <li>{{col}}</li>
+</ul>
+<br>
+<h5>Array with find Index value</h5>
+<ul *ngFor="let col of colors; index as i">
+    <li>{{i}} - {{col}}</li>
+</ul>
+<br>
+
+<h5>Array with find First Element</h5>
+<ul *ngFor="let col of colors; first as f">
+    <li>{{f}} - {{col}}</li>
+</ul>
+<br>
+
+<h5>Array with find Last Element</h5>
+<ul *ngFor="let col of colors; last as l">
+    <li>{{l}} - {{col}}</li>
+</ul>
+<br>
+
+<h5>Array with find Odd</h5>
+<ul *ngFor="let col of colors; odd as o">
+    <li>{{o}} - {{col}}</li>
+</ul>
+<br>
+
+<h5>Array with find Even</h5>
+<ul *ngFor="let col of colors; even as e">
+    <li>{{e}} - {{col}}</li>
+</ul>
+<br>
+
+<h5>Object Array binding</h5>
+<ul *ngFor="let obj of objArray">
+    <li>{{obj.id}} - {{obj.text}}</li>
+</ul>

@@ -1,1 +1,20 @@
 <h2>{{title}}</h2>
+
+<p *ngIf="true">{{title}} is true</p>
+<p *ngIf="false">{{title}} is true</p>
+
+<p *ngIf="isTrueOrFalse">via Property- is {{isTrueOrFalse}}</p>
+
+<!-- ---------------------------------- -->
+<p *ngIf="isTrueOrFalse; else elseBlock">Visible using ngIf</p>
+<ng-template #elseBlock>
+    <p>Hide using ngif</p>
+</ng-template>
+<!-- ------------------------------------- -->
+<p *ngIf="displayName; then thenBlock; else elseBlock2"></p>
+<ng-template #thenBlock>
+    <p>Coming from Then Block</p>
+</ng-template>
+<ng-template #elseBlock2>
+    <p>Coming from Else Block</p>
+</ng-template>

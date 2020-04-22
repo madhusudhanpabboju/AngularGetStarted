@@ -1,0 +1,43 @@
+<h2>{{title}}</h2>
+<h5>String Pipe</h5>
+<p>{{name}} - original value</p>
+<p>{{name | uppercase}} -  Upper Case</p>
+<p>{{name | lowercase}} - Lower Case</p>
+<p>{{name | titlecase}} - Title Case</p>
+<p>{{name | slice:12}} - Slice starting 12 characters</p>
+<p>{{name | slice:5:11}} - Only show 6 to 11 character</p>
+<p>{{person | json}} - show json data</p>
+
+<h5>Number Pipe</h5>
+<p>{{5.678 | number:'1.2-2'}}</p>
+<p>{{5.678 | number:'1.4-4'}}</p>
+<p>{{5.678 | number:'2.2-2'}}</p>
+<p>{{5.678 | number:'3.4-5'}}</p>
+
+<h5>Percent Pipe</h5>
+<p>{{0.25|percent}}</p>
+
+<h5>Currency Pipe</h5>
+<p>{{0.25|currency}}</p>
+<p>{{0.25|currency:'INR'}}</p>
+<p>{{0.25|currency : 'INR' : 'code'}}</p>
+
+
+<h5>Date Pipe</h5>
+<p>{{date}}</p>
+
+<p>{{date | date:'long'}}</p>
+<p>{{date | date:'longDate'}}</p>
+<p>{{date | date:'longTime'}}</p>
+
+<p>{{date | date:'medium'}}</p>
+<p>{{date | date:'mediumDate'}}</p>
+<p>{{date | date:'mediumTime'}}</p>
+
+<p>{{date | date:'short'}}</p>
+<p>{{date | date:'shortDate'}}</p>
+<p>{{date | date:'shortTime'}}</p>
+
+
+
+

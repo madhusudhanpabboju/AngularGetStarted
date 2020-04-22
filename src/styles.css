@@ -4,3 +4,16 @@
 h2{
     margin-top:50px;
 }
+.btn{
+    padding:5px 10px;
+    min-width:75px;
+    color:#444;
+    background-color: #e4e4e4;
+}   
+.btn.active{
+    background-color:#006edc;
+    color:#fff;
+}
+.btn + .btn{
+    margin-left:10px;
+}

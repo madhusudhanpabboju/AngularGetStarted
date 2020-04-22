@@ -10,6 +10,20 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { TemplatereferencevariablesComponent } from './templatereferencevariables/templatereferencevariables.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import { NgifdirectiveComponent } from './ngifdirective/ngifdirective.component';
+import { NgswitchdirectiveComponent } from './ngswitchdirective/ngswitchdirective.component';
+import { NgfordirectiveComponent } from './ngfordirective/ngfordirective.component';
+import { ParentcomponentComponent } from './componentinteraction/parentcomponent/parentcomponent.component';
+import { ChildcomponentComponent } from './componentinteraction/childcomponent/childcomponent.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { EmployeeListComponent } from './services/employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './services/employee-details/employee-details.component';
+import { EmployeeService } from './services/employee.service';
+import { HttpClientModule } from '@angular/common/http';
+import { StudentListComponent } from './http-observables-rxjs/student-list/student-list.component';
+import { StudentDetailsComponent } from './http-observables-rxjs/student-details/student-details.component';
+import { StudentsService } from './http-observables-rxjs/students.service';
+import { AppRoutingModule, routingComponents  } from './app-routing.module';
+import { RoutingComponent } from './routing/routing.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +35,29 @@ import { NgifdirectiveComponent } from './ngifdirective/ngifdirective.component'
     TemplatereferencevariablesComponent,
     TwowaybindingComponent,
     NgifdirectiveComponent,
+    NgswitchdirectiveComponent,
+    NgfordirectiveComponent,
+    ParentcomponentComponent,
+    ChildcomponentComponent,
+    PipesComponent,
+    EmployeeListComponent,
+    EmployeeDetailsComponent,
+    StudentListComponent,
+    StudentDetailsComponent,
+    RoutingComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    
   ],
-  providers: [],
+  providers: [
+    EmployeeService,
+    StudentsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
